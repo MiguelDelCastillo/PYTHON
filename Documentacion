@@ -1,0 +1,49 @@
+Suponiendo que un coche viaja únicamente a 80 km por hora ¿qué distancia recorre con $500 pesos, 
+y en cuánto tiempo lo hace (en horas y minutos)?
+
+Usando Data Driven Programming, elabora un programa en Python que resuelva el problema anterior,
+ y genere la siguiente salida:
+
+Datos a ocupar
+    #Datos a pedir
+    velocidad_coche = float(input("Cual es la velocidad del coche? "))
+    presupuesto_coche = float(input("Cual es tu presupuesto del coche? "))
+    precioxlitro = float(input("Cuanto cuesta el litro de gasolina? ")) 
+    rendimiento = float(input("Cuanto rinde por litro el coche? "))
+
+    #Operaciones a realizar
+    litros_disponibles = presupuesto_coche / precioxlitro
+    distancia = litros_disponibles * rendimiento
+    tiempo = velocidad_coche / distancia
+    horas = int(tiempo)
+    minutos = (tiempo - horas)*60
+
+    #Resultados a mostrar
+    print("Con "+ presupuesto_coche + "pesos")
+    print("Se recorren: "+ distancia + "km/h")
+    print("En "+ horas+ " Horas "+ minutos + " minutos")
+
+------
+Con $500.00 pesos
+se recorren 315.65 Km
+en 3 horas 56 minutos.
+------
+
+Especificaciones:
+0) Elaborar el diagrama de dependencias, y la tabla de datos.
+
+Código: 
+1) El programa debe asegurarse que se capturan en la consola los datos faltantes para el cálculo.
+2) El programa debe garantizar que los datos se capturan respetando el tipo que debe ser.
+3) No se admiten valores negativos en los datos capturados.
+4) La salida debe ser en el formato que se muestra en la salida.
+5) Las variables deben tener nombres de variables representativos..
+6) Agregar tus datos en el programa (como comentarios). También incluye comentarios, explicando lo que haces en el código. 
+
+NO SE ACEPTARÁN CÓDIGOS QUE NO CUMPLAN CON TODAS LAS ESPECIFICACIONES DE CÓDIGO.
+
+Tomar como referencia los lineamientos disponibles en Ramirez (2016) Aprende a programar usando Python v2.0.pdf
+
+En un sólo archivo PDF, incluir el diagrama de dependencias, la tabla de datos, y el código. El archivo debe llamarse 9999999-S01 Programa distancia.pdf (sustituir 9999999 por tu matrícula).
+
+Esta tarea otorga 2 puntos de participación, y cuenta como actividad programada.
