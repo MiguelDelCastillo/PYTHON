@@ -10,7 +10,7 @@ litrosdisponibles = presupuestocoche / precioxlitro
 distancia = litrosdisponibles * rendimiento
 tiempo = velocidadcoche / distancia
 horas = int(tiempo)
-minutos = (tiempo - horas)*60
+minutos = int((tiempo - horas)*60)
 
     #Resultados a mostrar
 print("Con ", presupuestocoche, "pesos")
